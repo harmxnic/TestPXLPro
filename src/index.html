@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TestPXL</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="reg-form">
+        <div class="reg-form__modal">
+            <form>
+                <div class="cross"></div>
+                <div class="reg-form__title">Регистрация</div>
+                <div class="reg-form__cities">
+                    <div class="dropdown">
+                        <div class="dropdown__title"><span id="city">Город</span> <span id="word"></span> <img src="icons/Vector%201.svg" alt="arrow" id="img"></div>
+                        <div class="dropdown__menu"></div>
+                    </div>
+                </div>
+                <div class="reg-form__name">
+                    <input id="text" type="text" placeholder="Имя Фамилия" required>
+                </div>
+                <div class="reg-form__phone">
+                    <input id="tel" type="tel" placeholder="Телефон" required>
+                </div>
+                <div class="reg-form__comment">
+                    <input id="comment" type="text" placeholder="Комментарий" required>
+                </div>
+                <div class="reg-form__radio">
+                    <div class="reg-form__radio_text">Мастер-класс</div>
+                    <div>
+                        <input id="radio-1" type="radio" name="master" required checked>
+                        <label for="radio-1">Экономия на онлайн-шопинге</label>
+                    </div>
+                    <div>
+                        <input id="radio-2" type="radio" name="master" required>
+                        <label for="radio-2">Мастер-класс</label>
+                    </div>
+                    <div>
+                        <input id="radio-3" type="radio" name="master" required>
+                        <label for="radio-3">Лучшие площадки</label>
+                    </div>
+                    <div>
+                        <input id="radio-4" type="radio" name="master" required>
+                        <label for="radio-4">Мастер-класс</label>
+                    </div>
+                </div>
+                <div class="reg-form__check">
+                    <div class="reg-form__check_text">Время проведения</div>
+                    <div>
+                        <input id="check-1" class="check" type="checkbox" name="time" onclick="deRequireCb('check')" required>
+                        <label for="check-1">12:00 – 14:00</label>
+                    </div>
+                    <div>
+                        <input id="check-2" class="check" type="checkbox" name="time" onclick="deRequireCb('check')" required>
+                        <label for="check-2">15:00 – 17:00</label>
+                    </div>
+                    <div>
+                        <input id="check-3" class="check" type="checkbox" name="time" onclick="deRequireCb('check')" required>
+                        <label for="check-3">19:00 – 21:00</label>
+                    </div>
+                </div>
+                <div class="reg-form__line">
+                    <input id="online" type="radio" name="line" checked>
+                    <label for="online" class="line_on">Онлайн</label>
+                    <input id="offline" type="radio" name="line">
+                    <label for="offline" class="line_off">Офлайн</label>
+                </div>
+                <div class="reg-form__range">
+                    <div class="reg-form__range_text">Сколько вы готовы заплатить за мероприятие?</div>
+                    <div class="reg-form__range_count">0 &#8381;</div>
+                    <input id="range" class="reg-form__range_slider" type="range" min="0" max="10000" step="100" value="0">
+                </div>
+                <div class="reg-form__privacy">
+                    <button class="reg-form__privacy_btn">Отправить</button>
+                    <div class="reg-form__privacy_text">
+                        Нажимая на кнопку, вы соглашаетесь <br>
+                        с <a href="#">Политикой обработки персональных данных</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="thanks">
+        <div class="thanks__modal">
+            <div class="cross"></div>
+            <h1 class="thanks__modal-title">Спасибо за заявку</h1>
+            <div class="thanks__modal-text">Мы свяжемся с вами в ближайшее время</div>
+            <button class="reg-form__privacy_btn btn-light">Продолжить</button>
+        </div>
+    </section>
+    <script src="js/cities.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
