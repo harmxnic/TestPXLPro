@@ -95,7 +95,7 @@ send.addEventListener('click', e => {
 })
 
 for (let i = 0; i < cities.length; i++) {
-    dropdownMenu.insertAdjacentHTML('beforeend', `<div class='option' tabindex="0">${cities[i]}</div>`)
+    dropdownMenu.insertAdjacentHTML('beforeend', `<div class="option">${cities[i]}</div>`)
 }
 const options = document.querySelectorAll('.option')
 
