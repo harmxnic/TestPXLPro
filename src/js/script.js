@@ -11,6 +11,25 @@ const tel = document.querySelector('#tel')
 const name = document.querySelector('#name')
 const comment = document.querySelector('#comment')
 const send = document.querySelector('.reg-form__privacy_btn')
+const labelName = document.querySelector('.label-name')
+const labelTel = document.querySelector('.label-tel')
+const labelComment = document.querySelector('.label-comment')
+
+name.addEventListener('input', e => {
+    if (name.value) {
+        labelName.style.display = 'block'
+    } else {
+        labelName.style.display = 'none'
+    }
+})
+
+comment.addEventListener('input', e => {
+    if (comment.value) {
+        labelComment.style.display = 'block'
+    } else {
+        labelComment.style.display = 'none'
+    }
+})
 
 tel.addEventListener('input', e => {
     if (tel.value[0] === '+') {
@@ -21,6 +40,11 @@ tel.addEventListener('input', e => {
         if (tel.value.length > 11) {
             tel.value = tel.value.slice(0, -1)
         }
+    }
+    if (tel.value) {
+        labelTel.style.display = 'block'
+    } else {
+        labelTel.style.display = 'none'
     }
 })
 
@@ -67,7 +91,7 @@ send.addEventListener('click', e => {
     const section = document.querySelector('.reg-form')
     const sectionThanks = document.querySelector('.thanks')
     section.style.display = 'none'
-    sectionThanks.style.display = 'block'
+    sectionThanks.style.display = 'flex'
 })
 
 for (let i = 0; i < cities.length; i++) {

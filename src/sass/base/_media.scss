@@ -1,0 +1,167 @@
+@media (max-width: 769px) {
+  .reg-form {
+    height: 1600px;
+    &__modal {
+      max-width: 560px;
+    }
+    &__privacy {
+      margin-top: 60px;
+      flex-direction: column;
+      align-items: flex-start;
+      &_text {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+  }
+  .thanks {
+    &__modal {
+      padding-top: 45px;
+      padding-left: 60px;
+      width: 560px;
+      height: 336px;
+      &-title {
+        font-size: 36px;
+      }
+      &-text {
+        font-size: 16px;
+        margin-top: 35px;
+      }
+      button {
+        margin-top: 40px;
+      }
+    }
+    .cross {
+      top: -10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .reg-form {
+    height: 1265px;
+    &__modal {
+      max-width: 344px;
+      padding: 20px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__cities {
+      height: 68px;
+      font-size: 16px;
+      .dropdown {
+        margin-top: 30px;
+      }
+    }
+    &__name, &__phone, &__comment {
+      margin-top: 28px;
+      input {
+        height: 68px;
+        font-size: 16px;
+      }
+      .label {
+        font-size: 12px;
+        top: -10px !important;
+      }
+    }
+    &__radio {
+      margin-top: 28px;
+      &_text {
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+      div {
+        label {
+          font-size: 16px;
+          line-height: 24px;
+          &:before {
+            top: 0;
+          }
+        }
+        input[type=radio]:checked + label:after {
+          top: 11px;
+        }
+      }
+    }
+    &__check {
+      margin-top: 28px;
+      &_text {
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+      div {
+        label {
+          font-size: 16px;
+          line-height: 24px;
+          &:before {
+            top: 0;
+          }
+        }
+        input[type=checkbox]:checked + label:after {
+          top: 8px;
+        }
+      }
+    }
+    &__line {
+      font-size: 12px;
+      label{
+        &:before {
+          bottom: -5px;
+        }
+        &:after {
+          bottom: 0;
+        }
+      }
+    }
+    &__range {
+      margin-top: 36px;
+      &_text {
+        font-size: 12px;
+      }
+      &_count {
+        font-size: 16px;
+      }
+    }
+    &__privacy {
+      &_btn {
+        font-size: 16px;
+      }
+      &_text {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .up {
+    font-size: 12px;
+  }
+
+  .cross {
+    top: 5px;
+    left: -60px;
+  }
+
+  .thanks {
+    &__modal {
+      padding-top: 43px;
+      padding-left: 24px;
+      width: 340px;
+      &-title {
+        font-size: 32px;
+        width: 140px;
+      }
+      &-text {
+        font-size: 16px;
+        margin-top: 20px;
+        width: 290px;
+      }
+      button {
+        margin-top: 35px;
+      }
+    }
+    .cross {
+      left: -20px;
+    }
+  }
+}

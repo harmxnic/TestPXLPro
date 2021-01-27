@@ -1,0 +1,59 @@
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+#img {
+  transition: transform .3s;
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+
+.up {
+  position: absolute;
+  top: -30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#word {
+  color: $white;
+}
+
+.invalid {
+  color: $pink !important;
+}
+
+.btn-light {
+  background: $pink;
+  box-shadow: 0px 10px 30px rgba(255, 119, 119, 0.4);
+  border-radius: 8px;
+  color: $white;
+  cursor: pointer;
+}
+
+.cross {
+  position: relative;
+  height: 28px;
+  width: 28px;
+  top: -25px;
+  left: -25px;
+  float: right;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #9E9DAC;
+    transform: rotate(45deg);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #9E9DAC;
+    transform: rotate(-45deg);
+  }
+}

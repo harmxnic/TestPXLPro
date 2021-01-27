@@ -1,0 +1,376 @@
+.reg-form {
+  background: url("../img/bg-modal.jpg") center;
+  padding: 40px 0;
+  height: 1560px;
+  &__modal {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: $dark-blue;
+    border-radius: 16px;
+    padding: 70px 80px 20px;
+    .cross {
+      &:after, &:before {
+        left: 65px;
+      }
+    }
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 48px;
+    color: $white;
+  }
+  &__cities {
+    width: 100%;
+    height: 81px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    .dropdown {
+      height: 60px;
+      margin-top: 75px;
+      color: $light-gray;
+      position: relative;
+      border-bottom: 1px solid $gray;
+      padding-top: 15px;
+      cursor: pointer;
+      &__title {
+        position: relative;
+        cursor: pointer;
+      }
+      &__menu {
+        position: relative;
+        display: none;
+        overflow-y: scroll;
+        margin-top: 8px;
+        height: 200px;
+        background: #0c0b31;
+        border-radius: 8px;
+        padding: 16px;
+        z-index: 10;
+        .option:hover {
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__name {
+    margin-top: 39px;
+    input {
+      outline: none;
+      background-color: $dark-blue;
+      border: none;
+      border-bottom: 1px solid $gray;
+      width: 100%;
+      height: 81px;
+      color: $white;
+      font-weight: 300;
+      font-size: 24px;
+      &::-webkit-input-placeholder {
+        color: $light-gray;
+      }
+    }
+  }
+  &__phone {
+    margin-top: 39px;
+    input {
+      outline: none;
+      background-color: $dark-blue;
+      border: none;
+      border-bottom: 1px solid $gray;
+      width: 50%;
+      height: 81px;
+      color: $white;
+      font-weight: 300;
+      font-size: 24px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      &::-webkit-input-placeholder {
+        color: $light-gray;
+      }
+    }
+  }
+  &__comment {
+    margin-top: 39px;
+    input {
+      outline: none;
+      background-color: $dark-blue;
+      border: none;
+      border-bottom: 1px solid $gray;
+      width: 100%;
+      height: 81px;
+      color: $white;
+      font-weight: 300;
+      font-size: 24px;
+      &::-webkit-input-placeholder {
+        color: $light-gray;
+      }
+    }
+  }
+  &__name, &__phone, &__comment {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .label {
+      display: none;
+      position: absolute;
+      top: -15px;
+      left: 0;
+      color: $light-gray;
+      font-weight: 300;
+    }
+  }
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+    &_text {
+      font-size: 16px;
+      margin-bottom: 21px;
+      color: $light-gray;
+      font-weight: 300;
+    }
+    div {
+      input[type=radio] {
+        display: none;
+      }
+      label {
+        display: inline-block;
+        position: relative;
+        margin-top: 16px;
+        padding-left: 39px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 300;
+        color: $gray;
+        cursor: pointer;
+        &:before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          left: 0;
+          bottom: 4px;
+          border: 1px solid $pink;
+          border-radius: 12px;
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      input[type=radio]:checked + label:before {
+        background-color: $pink;
+        box-shadow: 0px 2px 10px $pink;
+        border-radius: 12px;
+      }
+      input[type=radio]:checked + label:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        position: absolute;
+        left: 11px;
+        bottom: 15px;
+        background-color: $white;
+        border-radius: 8px;
+      }
+      input[type=radio]:checked + label{
+        color: $white;
+      }
+    }
+  }
+  &__check {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    &_text {
+      margin-bottom: 21px;
+      color: $light-gray;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+    }
+    div {
+      input[type=checkbox] {
+        display: none;
+      }
+      label {
+        display: inline-block;
+        position: relative;
+        margin-top: 16px;
+        padding-left: 40px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 300;
+        color: $gray;
+        cursor: pointer;
+        &:before {
+          content: "";
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          left: 0;
+          bottom: 3px;
+          border: 1px solid $pink;
+          border-radius: 4px;
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      input[type=checkbox]:checked + label:before {
+        background-color: $pink;
+        box-shadow: 0 2px 10px $pink;
+      }
+      input[type=checkbox]:checked + label:after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 10px;
+        left: 7px;
+        bottom: 10px;
+        background: url("../icons/Vector 2.svg") no-repeat;
+      }
+      input[type=checkbox]:checked + label{
+        color: $white;
+      }
+    }
+  }
+  &__line {
+    margin-top: 46px;
+    color: $light-gray;
+    font-weight: 300;
+    font-size: 16px;
+    input[type=radio] {
+      display: none;
+    }
+    label {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      transition: .5s ease;
+      padding-right: 56px;
+      color: $light-gray;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 4px;
+        bottom: -2px;
+        width: 40px;
+        height: 24px;
+        border: 1px solid $pink;
+        border-radius: 12px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 25px;
+        bottom: 3px;
+        width: 16px;
+        height: 16px;
+        background: $pink;
+        box-shadow: 0px 2px 10px $pink;
+        border-radius: 8px;
+        transition: .5s ease;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      &:last-child:before, &:last-child:after {
+        display: none;
+      }
+    }
+    input[type=radio]:checked + label {
+      color: $white;
+    }
+    .on:after {
+      right: 9px;
+    }
+  }
+  &__range {
+    margin-top: 45px;
+    &_text {
+      color: $light-gray;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &_count {
+      margin-top: 10px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 300;
+      color: $white;
+    }
+    &_slider {
+      position: relative;
+      width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      height: 1px;
+      background: -webkit-linear-gradient(left, $pink 0%, $pink 1%, $gray 1%, $gray 100%);
+      &::-webkit-slider-runnable-track{
+        height: 1px;
+      }
+      &::-webkit-slider-thumb {
+        box-shadow: 0px 2px 10px $pink;
+        background-color: $pink;
+        border-radius: 11.5px;
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+        -webkit-appearance: none;
+        margin-top: -11px;
+      }
+      &::-moz-range-thumb {
+        box-shadow: 0px 2px 10px $pink;
+        background-color: $pink;
+        border-radius: 11.5px;
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+        -webkit-appearance: none;
+        margin-top: -11px;
+        border: none;
+      }
+    }
+  }
+  &__privacy {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_btn {
+      width: 200px;
+      height: 58px;
+      background-color: $gray;
+      border-radius: 8px;
+      color: $dark-blue;
+      border: none;
+      font-size: 18px;
+      line-height: 140%;
+      font-weight: 500;
+      margin-right: 20px;
+    }
+    &_text {
+      width: 57%;
+      height: 48px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      color: $light-gray;
+      a {
+        border-bottom: 1px solid $gray;
+        color: $light-gray;
+        text-decoration: none;
+        transition: .2s;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

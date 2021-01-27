@@ -1,0 +1,28 @@
+.thanks {
+  background: url("../img/pop-up спс.jpg") center;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  &__modal {
+    width: 720px;
+    height: 410px;
+    background: $dark-blue;
+    border-radius: 16px;
+    padding-top: 67px;
+    padding-left: 80px;
+    &-title {
+      font-size: 48px;
+      color: $white;
+    }
+    &-text {
+      margin-top: 49px;
+      font-size: 24px;
+      font-weight: 300;
+      color: $white;
+    }
+    button {
+      margin-top: 62px;
+    }
+  }
+}

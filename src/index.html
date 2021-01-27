@@ -14,7 +14,7 @@
         <div class="reg-form__modal">
             <form>
                 <div class="cross"></div>
-                <div class="reg-form__title">Регистрация</div>
+                <h1 class="reg-form__title">Регистрация</h1>
                 <div class="reg-form__cities">
                     <div class="dropdown">
                         <div class="dropdown__title"><span id="city">Город</span> <span id="word"></span> <img src="icons/Vector%201.svg" alt="arrow" id="img"></div>
@@ -22,12 +22,15 @@
                     </div>
                 </div>
                 <div class="reg-form__name">
-                    <input id="text" type="text" placeholder="Имя Фамилия" required>
+                    <label for="name" class="label label-name">Имя Фамилия</label>
+                    <input id="name" type="text" placeholder="Имя Фамилия" required>
                 </div>
                 <div class="reg-form__phone">
+                    <label for="tel" class="label label-tel">Телефон</label>
                     <input id="tel" type="tel" placeholder="Телефон" required>
                 </div>
                 <div class="reg-form__comment">
+                    <label for="comment" class="label label-comment">Комментарий</label>
                     <input id="comment" type="text" placeholder="Комментарий" required>
                 </div>
                 <div class="reg-form__radio">
@@ -78,7 +81,7 @@
                 <div class="reg-form__privacy">
                     <button class="reg-form__privacy_btn">Отправить</button>
                     <div class="reg-form__privacy_text">
-                        Нажимая на кнопку, вы соглашаетесь <br>
+                        Нажимая на кнопку, вы соглашаетесь
                         с <a href="#">Политикой обработки персональных данных</a>
                     </div>
                 </div>
